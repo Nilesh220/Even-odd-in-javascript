@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+    button{
+        margin-top:20%;
+        margin-left:44%;
+        background-color: black;
+        color: aquamarine;
+        padding: 30px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+        <button onclick="myfunction()"> Click to enter a number</button>
+        <h2 id="demo"></h2>
+        <script>
+            function myfunction()
+            {
+                var  a = prompt("Enter a number");
+                if(a%2 == 0)
+                {
+                    getdata = "Even number";
+                }
+                else
+                {
+                    getdata = "odd number";
+                }
+                
+                {
+                document.getElementById("demo").innerHTML = getdata;
+            }
+            }
+        </script>
+</body>
+</html> 
